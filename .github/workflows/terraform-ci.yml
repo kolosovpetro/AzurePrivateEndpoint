@@ -52,6 +52,11 @@ jobs:
       - name: Verify encoding
         shell: pwsh
         run: ./scripts/verify-encoding.ps1
+        
+      - name: Create Password file
+        run: echo $PASSWORD > sql_password.txt
+        env:
+          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Terraform Init
         run: terraform init -backend=false
