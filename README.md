@@ -1,9 +1,14 @@
-# Terraform template
+# Azure Private Endpoint
 
-Terraform template for modules and submodules.
-Includes pre-commit hooks that lint the terraform code and generate module's
-documentation as part of README file.
-Contains examples of terraform CI/CD pipelines for GitHub Actions and Azure Pipelines.
+Using Terraform to set up an Azure Private Endpoint for SQL Server in a dedicated subnet, ensuring private access.
+Configure a Private DNS Zone and link it to the VNet for name resolution. Deny public access and use a VM in another
+subnet to validate connectivity via `nslookup`, ensuring secure, private communication.
+
+## Nslookup output
+
+After Private endpoint is provisioned, VM can resolve DNS as expected.
+
+![Nslookup](./images/nslookup.png)
 
 ## Terraform Init
 

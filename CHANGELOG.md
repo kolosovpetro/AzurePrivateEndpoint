@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 
 ### Changed
 
-- Update gitignore
-- Commit lock file
-- Move variable from locals
-- Git ignore txt files
-- Git ignore ssh keys
-- Update GitHub actions CI
-- Fix encoding and BOM characters
-- Azure pipelines for terraform
+- Configure VNET and two subnets: VM subnet and SQL Server subnet
+- Configure Azure Linux VM to validate connection with SQL server
+- Configure Azure SQL server
+- Configure Private Endpoint inside SQL subnet
+- Configure Private DNS zone
+- Associate Private DNS zone with VNET
+- Create DNS name using Private Endpoint non-public IP address
+- Validate solution using `nslookup`
