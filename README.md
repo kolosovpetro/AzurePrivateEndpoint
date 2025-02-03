@@ -10,6 +10,10 @@ After Private endpoint is provisioned, VM can resolve DNS as expected.
 
 ![Nslookup](./images/nslookup.png)
 
+Which matches actual private IP of network interface
+
+![NIC](./images/azure-portal-nic.png)
+
 ## Terraform Init
 
 - Create and configure Azure Storage Account for Terraform state
